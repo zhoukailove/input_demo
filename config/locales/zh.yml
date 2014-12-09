@@ -1,0 +1,53 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+zh:
+  will_paginate:
+#    class: "digg_pagination"
+    page_gap: "...."
+    previous_label: "上一页"
+    next_label: "下一页"
+#    renderer: "RemoteLinkRenderer"
+  activerecord:
+    attributes:
+      user:
+        name: "姓名"
+        Show: '查看'
+        email: "电子邮件"
+        mobile: '手机号码'
+        state: '状态'
+        pattern: "用户类型"
+        password: "密码"
+        current_password: "当前密码"
+        reset_password_token: "重置密钥"
+    errors:
+      template: 
+        header:
+          one: "有 1 个错误发生。"
+          other: "有 %{count} 个错误发生。"
+        body: "如下字段出现错误："
+      messages:
+        inclusion: "不包含于列表中"
+        exclusion: "是保留关键字"
+        invalid: "不正确"
+        confirmation: "和确认密码需一致"
+        accepted: "必须是可被接受的"
+        empty: "不能留空"
+        blank: "不能为空"
+        too_long: "过长（最长为 %{count} 个字符）"
+        too_short: "过短（最短为 %{count} 个字符）"
+        wrong_length: "长度非法（必须为 %{count} 个字符）"
+        taken: "已经被使用"
+        not_a_number: "必须是数字"
+        not_an_integer: "必须是整数"
+        greater_than: "必须大于 %{count}"
+        greater_than_or_equal_to: "必须大于或等于 %{count}"
+        equal_to: "必须等于 %{count}"
+        less_than: "必须小于 %{count}"
+        less_than_or_equal_to: "必须小于或等于 %{count}"
+        odd: "必须为单数"
+        even: "必须为双数"
+        record_invalid: "校验失败: %{errors}"
+  show: "查看"
+  edit: "编辑"
+  name: '姓名'

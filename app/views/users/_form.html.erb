@@ -1,0 +1,34 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <!--<h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>-->
+      <h2><%= @user.errors.count %> 个错误，禁保存，请修改！！</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name,'姓名' %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email ,'邮件地址' %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :mobile,'手机号码' %><br />
+    <%= f.text_field :mobile %>
+  </div>
+  <div class="field">
+    <%= f.label :state ,'状态'%><br />
+    <%= f.check_box :state %>
+  </div>
+  <div class="actions">
+    <%= f.submit '确认提交' %>
+  </div>
+<% end %>
